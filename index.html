@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <title>3D 试车</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./css/vrStyles.css">
+</head>
+
+<body>
+    <main id="pageMain">
+
+        <!-- Desktop controls -->
+        <div class="ctrls" id="ctrlKeys">
+            <div class="ctrlIcon" id="ctrlIcoKeys"></div>
+            <div class="ctrlDesc">方向控制</div>
+        </div>
+        <div class="ctrls" id="ctrlMouse">
+            <div class="ctrlIcon" id="ctrlIcoMouse"></div>
+            <div class="ctrlDesc">拖拽镜头</div>
+        </div>
+        <div class="ctrls" id="ctrlScroll">
+            <div class="ctrlIcon" id="ctrlIcoScroll"></div>
+            <div class="ctrlDesc">滚动缩放</div>
+        </div>
+
+        <!-- Mobile HUD -->
+        <div class="mobileHUD" id="mobileHUDTilt">
+            <div class="mobileIcon" id="hudIcoTilt"></div>
+            <div class="ctrlDesc">照相机</div>
+        </div>
+        <div class="mobileHUD" id="mobileHUDTouch">
+            <div class="mobileIcon" id="hudIcoTouch"></div>
+            <div class="ctrlDesc">方向控制</div>
+        </div>
+
+        <!-- Round Buttons -->
+        <div id="btnCase">
+            <div class="btnBox" id="btnVR">
+                <div class="btnIcon"></div>
+                <div class="ctrlDesc">VR方向</div>
+            </div>
+            <div class="btnBox" id="btnVRO">
+                <div class="btnIcon"></div>
+                <div class="ctrlDesc">VR镜头</div>
+            </div>
+            <div class="btnBox" id="btnVREsc">
+                <div class="btnIcon"></div>
+                <div class="ctrlDesc">退出VR</div>
+            </div>
+            <div class="btnBox" id="btnEnterFull">
+                <div class="btnIcon"></div>
+                <div class="ctrlDesc">全屏</div>
+            </div>
+            <div class="btnBox" id="btnExitFull">
+                <div class="btnIcon"></div>
+                <div class="ctrlDesc">退出全屏</div>
+            </div>
+        </div>
+
+        <!-- Joystick control -->
+        <svg class="joyStick" id="joyOut">
+            <circle cx="60" cy="60" r="42" />
+            <polyline points="49 11 60 2 71 11" class="st1" />
+            <polyline points="11 49 2 60 11 71" class="st1" />
+            <polyline points="71 107 60 118 49 107" class="st1" />
+            <polyline points="107 71 118 60 107 49" class="st1" />
+        </svg>
+        <svg class="joyStick" id="joyIn">
+            <circle cx="34" cy="34" r="30" />
+        </svg>
+
+        <!-- Preloader widget -->
+        <div id="preloader">
+            <div id="preHeader">虚拟实境车辆试乘</div>
+            <div id="preBar">
+                <div id="preProg"></div>
+            </div>
+            <div id="preDetail"></div>
+            <!-- <div id="preLogo"></div>
+            <a href="https://www.ff.com/us/ff-91">
+                <div id="preButton">
+                    <div id="preButText">前往 FF 91图库</div>
+                </div>
+            </a> -->
+        </div>
+
+    </main>
+
+    <!-- Magical goodness --> 
+    <script src="./js/locale.js"></script>
+    <script src="./libs/three.js"></script>
+    <script src="./libs/hammer.js"></script>
+    <script src="./libs/nosleep.js"></script>
+    <script src="./libs/TweenLite.js"></script>
+    <script src="./js/vr.js" type="module"></script>
+
+</body>
+
+</html>
