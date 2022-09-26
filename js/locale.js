@@ -22,7 +22,7 @@ var locale = {
         DRAG_CAMERA: '拖拽镜头',
         SCROLL_ZOOM: '滑动缩放',
         TILT: '倾斜',
-        VR_STEERING: 'VR方向控制',
+        VR_STEERING: 'VR方向',
         VR_CAMERA: 'VR镜头',
         EXIT_VR: '退出VR',
         FULLSCREEN: '全屏',
